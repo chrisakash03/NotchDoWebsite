@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NotchDo — Your tasks, hidden in plain sight.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface": "#0e0e0e",
+              "on-secondary-fixed-variant": "#563ea6",
+              "surface-container": "#191919",
+              "on-surface": "#ffffff",
+              "surface-container-lowest": "#000000",
+              "tertiary-fixed": "#fd8bcc",
+              "surface-container-highest": "#262626",
+              "on-surface-variant": "#ababab",
+              "outline-variant": "#484848",
+              "on-secondary": "#260073",
+              "on-primary-container": "#10007f",
+              "tertiary-container": "#fd8bcc",
+              "surface-variant": "#262626",
+              "on-error": "#490013",
+              "surface-dim": "#0e0e0e",
+              "on-secondary-container": "#d5c9ff",
+              "inverse-primary": "#4e4bd5",
+              "on-background": "#ffffff",
+              "on-primary-fixed": "#000000",
+              "inverse-surface": "#f9f9f9",
+              "surface-container-low": "#131313",
+              "primary": "#a5a5ff",
+              "on-tertiary-fixed-variant": "#6c104f",
+              "primary-fixed": "#9695ff",
+              "secondary-fixed": "#d7caff",
+              "secondary-container": "#4c329c",
+              "on-primary": "#1700a1",
+              "tertiary-fixed-dim": "#ed7ebe",
+              "on-tertiary-fixed": "#350025",
+              "on-secondary-fixed": "#391b89",
+              "tertiary-dim": "#ed7ebe",
+              "secondary-fixed-dim": "#c9baff",
+              "primary-fixed-dim": "#8686ff",
+              "surface-container-high": "#1f1f1f",
+              "primary-dim": "#6462ec",
+              "outline": "#757575",
+              "background": "#0e0e0e",
+              "error": "#ff6e84",
+              "on-primary-fixed-variant": "#16009b",
+              "on-tertiary": "#6e1150",
+              "inverse-on-surface": "#555555",
+              "tertiary": "#ffa1d5",
+              "surface-bright": "#2c2c2c",
+              "surface-tint": "#a5a5ff",
+              "secondary-dim": "#a48dfb",
+              "secondary": "#a790fe",
+              "error-dim": "#d73357",
+              "error-container": "#a70138",
+              "on-tertiary-container": "#610246",
+              "primary-container": "#9695ff",
+              "on-error-container": "#ffb2b9"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #0e0e0e; color: #ffffff; }
+        .glass-effect { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .notch-shadow { box-shadow: 0 0 40px 0 rgba(165, 165, 255, 0.15); }
+    </style>
+</head>
+<body class="bg-background text-on-surface overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl rounded-2xl bg-zinc-950/60 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.4)] flex justify-between items-center px-8 py-3 z-50">
+<a class="text-xl font-bold tracking-tighter text-white hover:opacity-90 transition-opacity" href="code.html">NotchDo</a>
+<div class="hidden md:flex items-center gap-8 font-sans tracking-tight font-semibold text-sm">
+<a class="text-white font-bold hover:text-white hover:scale-105 transition-all" href="../features_sync/code.html">Features</a>
+<a class="text-zinc-400 hover:text-white hover:scale-105 transition-all" href="../pricing_download/code.html">Pricing</a>
+<a class="text-zinc-400 hover:text-white hover:scale-105 transition-all" href="../support_faq/code.html">Support</a>
+</div>
+<a class="bg-gradient-to-r from-primary to-primary-dim text-on-primary-fixed px-5 py-2 rounded-full font-bold text-sm hover:scale-105 active:scale-95 duration-200 transition-all" href="../pricing_download/code.html">
+            Download
+        </a>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex flex-col items-center justify-center pt-32 pb-20 px-6 overflow-hidden">
+<!-- Abstract background glow -->
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/10 blur-[120px] rounded-full -z-10"></div>
+<div class="text-center max-w-4xl mx-auto mb-16">
+<h1 class="text-[32px] md:text-[68px] font-black tracking-tight mb-6 leading-[1.1]">
+                Your tasks, <span class="text-primary">hidden in plain sight.</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto font-medium">
+                The zero-window task manager for macOS. NotchDo lives in your camera notch, expanding only when you need it.
+            </p>
+<div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+<button class="px-8 py-4 bg-gradient-to-r from-primary to-primary-dim text-on-primary-fixed rounded-full font-bold text-lg hover:scale-105 transition-transform flex items-center gap-2">
+                    Download for Mac
+                    <span class="material-symbols-outlined">download</span>
+</button>
+</div>
+</div>
+<!-- Hero Video Placeholder -->
+<div class="relative w-full max-w-[1022px] mx-auto">
+<div class="relative aspect-[1022/692] rounded-[2.5rem] bg-surface-container-low border border-white/10 overflow-hidden shadow-2xl">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10"></div>
+<div class="absolute inset-0 flex flex-col items-center justify-center gap-4">
+<div class="w-20 h-20 rounded-full bg-black/60 border border-white/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">play_arrow</span>
+</div>
+<div class="text-center space-y-1">
+<p class="text-sm font-bold tracking-[0.2em] uppercase text-on-surface-variant">Video Placeholder</p>
+<p class="text-xs text-on-surface-variant/80">Drop product walkthrough here</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Bento Grid -->
+<section class="max-w-7xl mx-auto px-8 py-24">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Large Feature -->
+<div class="md:col-span-8 bg-surface-container rounded-3xl p-10 flex flex-col justify-between overflow-hidden relative">
+<div class="relative z-10">
+<span class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-4 block">Native Performance</span>
+<h2 class="text-4xl font-bold mb-6 max-w-md">Swiftly designed for the Apple Silicon era.</h2>
+<p class="text-on-surface-variant max-w-sm">NotchDo is built on Swift and SwiftUI, barely taking up less than ~5mb of space on your mac</p>
+</div>
+<div class="absolute right-[-10%] bottom-[-10%] w-2/3 opacity-20">
+<img alt="CPU Chip" class="rounded-full" data-alt="Abstract glowing microchip or processor design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsKPjgLpeZLl-pGv1EQIp4UlejwDckW7SlV6Uf4zfF15QShPOxkpP6aMhD_NjjHmmTI3JAH5MHXqzaVe9C8GZ5Ipq3n4IBznyoc_rMU6lB9i0-JyzlfATtLrIY-Im-TjokehDBrktzM2yqgybWI2215_Br9GmiI6gIOiaIpXrztHasIepX3hXfY69yxFoNE1nqXeoBT9a1X_afPz-ydiJI3VjCyUS320fUvwg5tHQvzyet8NvfS2GJT5Tc5ii4_rXXc_PJ8O6l7bk"/>
+</div>
+</div>
+<!-- Small Feature -->
+<div class="md:col-span-4 bg-surface-container-high rounded-3xl p-10 flex flex-col items-center text-center justify-center border border-white/5">
+<div class="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">sync</span>
+</div>
+<h3 class="text-xl font-bold mb-4">iCloud Sync</h3>
+<p class="text-on-surface-variant text-sm">Your tasks follow you across iPhone, iPad, and Mac instantly.</p>
+</div>
+<!-- Small Feature -->
+<div class="md:col-span-4 bg-surface-container-high rounded-3xl p-10 flex flex-col items-center text-center justify-center border border-white/5">
+<div class="w-16 h-16 bg-secondary/20 rounded-2xl flex items-center justify-center mb-6">
+<div class="w-9 h-7 rounded-lg border-2 border-secondary/70 bg-surface-container-low relative shadow-inner">
+<div class="absolute left-2 right-2 top-2 h-px bg-secondary/50"></div>
+<div class="absolute left-2 right-4 top-4 h-px bg-secondary/35"></div>
+<div class="absolute top-1/2 -translate-y-1/2 right-2 w-[2px] h-3 bg-secondary rounded-full animate-pulse"></div>
+</div>
+</div>
+<h3 class="text-xl font-bold mb-4">Cards</h3>
+<p class="text-on-surface-variant text-sm">Cards allow you to jot down quick thoughts</p>
+</div>
+<!-- Medium Feature -->
+<div class="md:col-span-8 bg-surface-container rounded-3xl p-10 flex flex-col md:flex-row items-center gap-10">
+<div class="flex-1">
+<span class="text-primary font-bold text-xs uppercase tracking-[0.2em] mb-4 block">Zero Window</span>
+<h2 class="text-3xl font-bold mb-4">Declutter your desktop.</h2>
+<p class="text-on-surface-variant">No windows to manage, no dock icons to hide. NotchDo is an extension of your hardware.</p>
+</div>
+<div class="flex-1 w-full h-48 bg-surface-container-lowest rounded-2xl flex items-center justify-center p-4">
+<div class="flex gap-2">
+<div class="w-3 h-3 rounded-full bg-error/40"></div>
+<div class="w-3 h-3 rounded-full bg-primary/40"></div>
+<div class="w-3 h-3 rounded-full bg-secondary/40"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing / CTA -->
+<section class="max-w-7xl mx-auto px-8 py-32 text-center">
+<div class="bg-gradient-to-b from-surface-container to-surface-container-lowest rounded-[3rem] p-16 border border-white/5 relative overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent"></div>
+<h2 class="text-4xl md:text-6xl font-black mb-8 relative z-10">One price. All devices.</h2>
+<div class="flex justify-center items-baseline gap-2 mb-10 relative z-10">
+<span class="text-6xl font-black">$19</span>
+<span class="text-on-surface-variant font-bold uppercase tracking-widest text-sm">One-time purchase</span>
+</div>
+<button class="px-12 py-5 bg-white text-black rounded-full font-black text-xl hover:scale-105 transition-transform shadow-xl relative z-10">
+                Get Lifetime Access
+            </button>
+<p class="mt-8 text-on-surface-variant text-sm font-medium relative z-10">Includes all future updates and cloud sync.</p>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-black w-full py-12 px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<a class="text-lg font-black text-white hover:opacity-90 transition-opacity" href="code.html">NotchDo</a>
+<div class="flex gap-8 text-xs font-medium uppercase tracking-widest text-zinc-500">
+<a class="hover:text-white transition-colors" href="#">Privacy</a>
+<a class="hover:text-white transition-colors" href="#">Terms</a>
+<a class="hover:text-white transition-colors" href="#">Twitter</a>
+<a class="hover:text-white transition-colors" href="#">GitHub</a>
+</div>
+<div class="text-xs font-medium uppercase tracking-widest text-zinc-500">
+                © 2024 NotchDo. Built for macOS.
+            </div>
+</div>
+<div class="max-w-7xl mx-auto mt-8 h-px bg-gradient-to-r from-transparent via-zinc-800 to-transparent"></div>
+</footer>
+</body></html>

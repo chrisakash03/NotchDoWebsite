@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NotchDo — Support &amp; FAQ</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface": "#0e0e0e",
+              "on-secondary-fixed-variant": "#563ea6",
+              "surface-container": "#191919",
+              "on-surface": "#ffffff",
+              "surface-container-lowest": "#000000",
+              "tertiary-fixed": "#fd8bcc",
+              "surface-container-highest": "#262626",
+              "on-surface-variant": "#ababab",
+              "outline-variant": "#484848",
+              "on-secondary": "#260073",
+              "on-primary-container": "#10007f",
+              "tertiary-container": "#fd8bcc",
+              "surface-variant": "#262626",
+              "on-error": "#490013",
+              "surface-dim": "#0e0e0e",
+              "on-secondary-container": "#d5c9ff",
+              "inverse-primary": "#4e4bd5",
+              "on-background": "#ffffff",
+              "on-primary-fixed": "#000000",
+              "inverse-surface": "#f9f9f9",
+              "surface-container-low": "#131313",
+              "primary": "#a5a5ff",
+              "on-tertiary-fixed-variant": "#6c104f",
+              "primary-fixed": "#9695ff",
+              "secondary-fixed": "#d7caff",
+              "secondary-container": "#4c329c",
+              "on-primary": "#1700a1",
+              "tertiary-fixed-dim": "#ed7ebe",
+              "on-tertiary-fixed": "#350025",
+              "on-secondary-fixed": "#391b89",
+              "tertiary-dim": "#ed7ebe",
+              "secondary-fixed-dim": "#c9baff",
+              "primary-fixed-dim": "#8686ff",
+              "surface-container-high": "#1f1f1f",
+              "primary-dim": "#6462ec",
+              "outline": "#757575",
+              "background": "#0e0e0e",
+              "error": "#ff6e84",
+              "on-primary-fixed-variant": "#16009b",
+              "on-tertiary": "#6e1150",
+              "inverse-on-surface": "#555555",
+              "tertiary": "#ffa1d5",
+              "surface-bright": "#2c2c2c",
+              "surface-tint": "#a5a5ff",
+              "secondary-dim": "#a48dfb",
+              "secondary": "#a790fe",
+              "error-dim": "#d73357",
+              "error-container": "#a70138",
+              "on-tertiary-container": "#610246",
+              "primary-container": "#9695ff",
+              "on-error-container": "#ffb2b9"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0e0e0e;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary/30">
+<!-- TopNavBar Execution from JSON -->
+<nav class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl rounded-2xl bg-zinc-950/60 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.4)] flex justify-between items-center px-8 py-3 z-50">
+<a class="text-xl font-bold tracking-tighter text-white hover:opacity-90 transition-opacity" href="../notchdo_landing_page/code.html">NotchDo</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-zinc-400 font-sans tracking-tight font-semibold text-sm hover:text-white hover:scale-105 transition-all" href="../features_sync/code.html">Features</a>
+<a class="text-zinc-400 font-sans tracking-tight font-semibold text-sm hover:text-white hover:scale-105 transition-all" href="../pricing_download/code.html">Pricing</a>
+<a class="text-white font-bold font-sans tracking-tight text-sm hover:text-white hover:scale-105 transition-all" href="code.html">Support</a>
+</div>
+<a class="bg-gradient-to-br from-primary to-primary-dim text-on-primary-fixed px-5 py-2 rounded-full font-bold text-sm hover:scale-105 active:scale-95 transition-all" href="../pricing_download/code.html">
+            Download
+        </a>
+</nav>
+<main class="pt-32 pb-24 px-6 max-w-7xl mx-auto">
+<!-- Hero & Search -->
+<header class="text-center mb-20">
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-on-surface-variant">
+                How can we help?
+            </h1>
+<p class="text-on-surface-variant max-w-2xl mx-auto text-lg mb-12">
+                Search our knowledge base or browse categories below to find answers to common questions about NotchDo.
+            </p>
+<!-- Search Bar Component -->
+<div class="relative max-w-2xl mx-auto">
+<div class="absolute inset-y-0 left-6 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-primary" data-icon="search">search</span>
+</div>
+<input class="w-full bg-surface-container-low border-none rounded-2xl py-5 pl-16 pr-6 text-on-surface placeholder:text-zinc-600 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-high transition-all outline-none text-lg" placeholder="Search for articles, sync issues, shortcuts..." type="text"/>
+</div>
+</header>
+<!-- FAQ Categories: Bento Grid Style -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-32">
+<!-- Category: Getting Started -->
+<div class="md:col-span-2 bg-surface-container rounded-2xl p-8 flex flex-col justify-between group hover:bg-surface-container-high transition-colors">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="rocket_launch">rocket_launch</span>
+</div>
+<h2 class="text-2xl font-bold tracking-tight">Getting Started</h2>
+</div>
+<ul class="space-y-4">
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="text-on-surface-variant group-hover/item:text-white transition-colors">Initial setup and macOS permissions</span>
+<span class="material-symbols-outlined text-zinc-700 group-hover/item:text-primary transition-colors text-sm" data-icon="arrow_forward">arrow_forward</span>
+</li>
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="text-on-surface-variant group-hover/item:text-white transition-colors">Understanding the Notch interface</span>
+<span class="material-symbols-outlined text-zinc-700 group-hover/item:text-primary transition-colors text-sm" data-icon="arrow_forward">arrow_forward</span>
+</li>
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="text-on-surface-variant group-hover/item:text-white transition-colors">Creating your first workflow</span>
+<span class="material-symbols-outlined text-zinc-700 group-hover/item:text-primary transition-colors text-sm" data-icon="arrow_forward">arrow_forward</span>
+</li>
+</ul>
+</div>
+<div class="mt-8 pt-6 border-t border-white/5">
+<button class="text-xs font-bold uppercase tracking-widest text-secondary flex items-center gap-2">
+                        View all 12 articles
+                    </button>
+</div>
+</div>
+<!-- Category: iCloud Syncing -->
+<div class="bg-surface-container rounded-2xl p-8 flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="cloud_sync">cloud_sync</span>
+</div>
+<h2 class="text-2xl font-bold tracking-tight">iCloud Syncing</h2>
+</div>
+<ul class="space-y-4">
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="text-on-surface-variant group-hover/item:text-white transition-colors">Troubleshooting sync delay</span>
+<span class="material-symbols-outlined text-zinc-700 group-hover/item:text-primary transition-colors text-sm" data-icon="arrow_forward">arrow_forward</span>
+</li>
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="text-on-surface-variant group-hover/item:text-white transition-colors">Syncing across multiple Macs</span>
+<span class="material-symbols-outlined text-zinc-700 group-hover/item:text-primary transition-colors text-sm" data-icon="arrow_forward">arrow_forward</span>
+</li>
+</ul>
+</div>
+<div class="mt-8 pt-6 border-t border-white/5">
+<button class="text-xs font-bold uppercase tracking-widest text-secondary flex items-center gap-2">
+                        View all 8 articles
+                    </button>
+</div>
+</div>
+<!-- Category: Common Questions -->
+<div class="md:col-span-3 bg-surface-container rounded-2xl p-10 flex flex-col md:flex-row gap-12 hover:bg-surface-container-high transition-colors">
+<div class="flex-1">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-12 h-12 rounded-xl bg-tertiary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary" data-icon="quiz">quiz</span>
+</div>
+<h2 class="text-2xl font-bold tracking-tight">Common Questions</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
+<div class="group/item cursor-pointer py-2 flex justify-between items-center border-b border-white/5">
+<span class="text-on-surface-variant group-hover/item:text-white transition-colors">Managing your subscription</span>
+<span class="material-symbols-outlined text-zinc-700 group-hover/item:text-primary transition-colors text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+<div class="group/item cursor-pointer py-2 flex justify-between items-center border-b border-white/5">
+<span class="text-on-surface-variant group-hover/item:text-white transition-colors">Keyboard shortcuts masterlist</span>
+<span class="material-symbols-outlined text-zinc-700 group-hover/item:text-primary transition-colors text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+<div class="group/item cursor-pointer py-2 flex justify-between items-center border-b border-white/5">
+<span class="text-on-surface-variant group-hover/item:text-white transition-colors">Privacy and data security</span>
+<span class="material-symbols-outlined text-zinc-700 group-hover/item:text-primary transition-colors text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+<div class="group/item cursor-pointer py-2 flex justify-between items-center border-b border-white/5">
+<span class="text-on-surface-variant group-hover/item:text-white transition-colors">Exporting your data</span>
+<span class="material-symbols-outlined text-zinc-700 group-hover/item:text-primary transition-colors text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Still Need Help Section -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center bg-surface-container-low rounded-[2rem] p-8 md:p-16">
+<div class="space-y-8">
+<div>
+<span class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-4 block">Direct Support</span>
+<h2 class="text-4xl md:text-5xl font-black tracking-tighter mb-6">Still need help?</h2>
+<p class="text-on-surface-variant text-lg">
+                        If you couldn't find what you were looking for, our team of experts is ready to assist you. We typically respond within 24 hours.
+                    </p>
+</div>
+</div>
+<!-- Support Contact -->
+<div class="bg-surface-container-highest/30 backdrop-blur-md p-8 md:p-10 rounded-3xl shadow-xl flex flex-col items-center justify-center text-center gap-6 min-h-[280px]">
+<div class="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-3xl" data-icon="mail">mail</span>
+</div>
+<div class="space-y-2">
+<p class="text-sm font-bold uppercase tracking-widest text-zinc-500">Support</p>
+<p class="text-on-surface-variant text-lg">For support, contact:</p>
+<a class="text-2xl md:text-3xl font-bold text-white hover:text-primary transition-colors" href="mailto:chrisakashh@gmail.com">chrisakashh@gmail.com</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Execution from JSON -->
+<footer class="w-full py-12 px-8 bg-black bg-gradient-to-t from-zinc-900 to-black">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<a class="text-lg font-black text-white hover:opacity-90 transition-opacity" href="../notchdo_landing_page/code.html">NotchDo</a>
+<div class="text-xs font-medium uppercase tracking-widest text-zinc-500">© 2024 NotchDo. Built for macOS.</div>
+<div class="flex gap-8">
+<a class="text-xs font-medium uppercase tracking-widest text-zinc-500 hover:text-white transition-colors" href="#">Privacy</a>
+<a class="text-xs font-medium uppercase tracking-widest text-zinc-500 hover:text-white transition-colors" href="#">Terms</a>
+<a class="text-xs font-medium uppercase tracking-widest text-zinc-500 hover:text-white transition-colors" href="#">Twitter</a>
+<a class="text-xs font-medium uppercase tracking-widest text-zinc-500 hover:text-white transition-colors" href="#">GitHub</a>
+</div>
+</div>
+</footer>
+</body></html>
