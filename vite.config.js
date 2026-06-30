@@ -13,6 +13,7 @@ export default defineConfig({
         featuresSync: resolve(__dirname, "features_sync/code.html"),
         pricingDownload: resolve(__dirname, "pricing_download/code.html"),
         supportFaq: resolve(__dirname, "support_faq/code.html"),
+        privacyPolicy: resolve(__dirname, "privacy_policy/code.html"),
       },
     },
   },
