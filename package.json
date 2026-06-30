@@ -1,10 +1,10 @@
 {
-  "name": "stitch",
+  "name": "notchdo-website",
   "version": "1.0.0",
   "description": "Static multi-page site with Vite dev/build tooling.",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && touch dist/.nojekyll",
     "preview": "vite preview"
   },
   "keywords": [],

@@ -1,7 +1,7 @@
 import { resolve } from "node:path";
 import { defineConfig } from "vite";
 
-const githubPagesBase = process.env.GITHUB_PAGES_BASE || "/stitch/";
+const githubPagesBase = process.env.GITHUB_PAGES_BASE || "/NotchDoWebsite/";
 
 export default defineConfig({
   base: githubPagesBase,
